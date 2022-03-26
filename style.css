@@ -1,0 +1,294 @@
+
+body {
+    min-height: 100%;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainContainer{
+  
+  width: 100%;
+ 
+}
+.topDiv{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.topLeftDiv{
+    width: 690px;
+    background-color: gray;
+    height: 440px;
+    
+
+}
+.imageContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: all 1s ease;
+}
+.menuBar{
+    position: absolute;
+    width: 550px;
+    height: 50px;
+    background-color: none;
+    top: 10px;
+}
+h3{
+    font-size: 30px;
+}
+.fa-bars{
+    display: none;
+}
+
+
+.menu{
+    font-size: 20px;
+    font-weight: 500;
+    user-select: none;
+    cursor: pointer;
+}
+.menuForHide{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.menu:hover{
+    opacity: 0.8;
+    padding: 5px;
+    border-bottom: 2px solid white;
+}
+
+.leftMove{
+    transform: translateX(-692px);
+}
+
+.topRightDiv{
+    width: 55%;
+    background-color: ivory;
+    position: relative;
+}
+.paraContainer{
+    margin: 50px auto;
+    width: 500px;
+    
+}
+.shopNowDiv{
+   width: 500px;
+   margin: -30px auto;
+   font-size: 30px;
+   font-weight: 900;
+   cursor: pointer;
+   user-select: none;
+   display: flex;
+   align-items: center;
+}
+.shopNowDiv:hover{
+    opacity: 0.6;
+    
+}
+.arrow{
+     margin-left: 30px;
+}
+.slidebutton{
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    
+}
+.leftArrow,
+.rightArrow{
+    font-size: 70px;
+    user-select: none;
+    cursor: pointer;
+}
+ .leftArrow:active,
+ .rightArrow:active{
+     opacity: 0.6;
+ }
+ 
+h1{
+    
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+h2{
+    margin-bottom: 20px;
+}
+span{
+    font-size: 18px;
+    color: rgb(63, 63, 63);
+}
+
+.footerDiv{
+    display: flex;
+    flex-direction: row;
+}
+.footer{
+    width: 30%;
+    height: 320px;
+}
+.darkChair,
+.lightChair{
+    width: 100%;
+    height: 100%;
+}
+.footer2{
+    width: 40%;
+}
+.cover{
+        width: 40vw;
+        height: 45vh;
+        background-color: rgb(32, 88, 32);
+        font-size: 20px;
+        position: absolute;
+        top: -10px;
+        left: -45vw;
+        transition: all 1s ease;
+}
+ul{
+    width: 25vw ;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+    margin: 10px;
+}
+li:hover{
+    opacity: 0.8;
+    padding: 5px;
+    border-bottom:1px solid black ;
+}
+
+.fa-times{
+    width: 5vw;
+    height: 2vh;
+    display: none;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+@media (max-width: 1230px) {
+    .paraContainer{
+        width: 300px;
+    }
+    h1{
+       font-size: 30px;
+    }
+    .shopNowDiv{
+        width: 300px;
+        font-size: 20px;
+    }
+   .slidebutton{
+       left: 100px;
+   }
+}
+@media (max-width: 1040px){
+    .topDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .topLeftDiv{
+        width: 3000px;
+        height: 600px;
+    }
+    .image{
+        width: 100vw;
+    }
+    .topRightDiv{
+        width: 100%;
+        position: relative;
+
+        
+    }
+    .paraContainer{
+        width: 70%;
+        margin-bottom: 0px;
+         
+    }
+    h1{
+       font-size: 50px;
+    }
+    .shopNowDiv{
+        width: 70%;
+        height: 100px;
+        font-size: 30px;
+        margin: 0px auto;
+     
+         
+    }
+    .slidebutton{
+        top: -70px;
+    }
+    .footerDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .footer2{
+        width: 100%;
+    }
+    .opened{
+        left: -20px;
+    }
+}
+@media (max-width: 600px){
+    .menuForHide{
+        display: none;
+        
+    }
+    .menuBar{
+        width: 200px;
+        font-size: 50px;
+        color: white;
+        left: 20px;
+        top:10px;
+    }
+
+    .fa-bars{
+        display: block;
+    }
+    .fa-bars:active{
+        opacity: 0.8;
+    }
+    
+    .topLeftDiv{
+        width: 690px;
+        background-color: gray;
+        height: 440px;
+    }
+    .image{
+        width: 100vw;
+    }
+    .shopNowDiv{
+
+        width: 70%;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .slidebutton{
+        bottom: 150px;
+        left: 50px;
+    }
+    .footer{
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .footer2{
+        width: 100%;
+    }
+    
+}
